@@ -72,6 +72,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Customer '" + txtName.Text + "' has been succesfully added");
                 txtName.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillCustomerDGV();
             }
             else
             {
@@ -79,8 +81,7 @@ namespace Database_Project
                 //MessageBox.Show("INSERT INTO Customer (CustomerID, CustomerName, PhoneNumber, EmailAddress, Status, JoinDate, OtherAuthorizedUsers) Values (" + txtID.Text.Trim() + ",'" + txtName.Text.Trim() + "','" + txtPhone.Text.Trim() + "','" + txtEmail.Text.Trim() + "','" + txtStatus.Text.Trim() + "','" + txtJoinDate.Text.Trim() + "'," + AuthLabel.Text.Trim() + ")");
                 MessageBox.Show("An error occurred while entering the customer " + txtName.Text + " into the database.");
             }
-
-            FillCustomerDGV();
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -96,6 +97,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Customer '" + txtName.Text + "' has been succesfully updated");
                 txtName.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillCustomerDGV();
             }
             else
             {
@@ -103,7 +106,6 @@ namespace Database_Project
                 MessageBox.Show("An error occurred while updating " + txtName.Text);
             }
 
-            FillCustomerDGV();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -117,6 +119,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Customer '" + txtID.Text + "' has been succesfully deleted");
                 txtID.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillCustomerDGV();
             }
             else
             {
@@ -124,7 +128,6 @@ namespace Database_Project
                 MessageBox.Show("An error occurred while deleting " + txtID.Text);
             }
 
-            FillCustomerDGV();
         }
     }
 }
