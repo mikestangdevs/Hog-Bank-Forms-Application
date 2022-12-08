@@ -63,6 +63,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Employee '" + txtName.Text + "' has been succesfully added");
                 txtName.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillEmployeeDGV();
             }
             else
             {
@@ -70,7 +72,6 @@ namespace Database_Project
                 MessageBox.Show("An error occurred while entering the employee " + txtName.Text + " into the database.");
             }
 
-            FillEmployeeDGV();
         }
 
 
@@ -133,6 +134,8 @@ namespace Database_Project
                // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Employee '" + txtName.Text + "' has been succesfully updated");
                 txtName.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillEmployeeDGV();
             }
             else
             {
@@ -140,8 +143,6 @@ namespace Database_Project
                 MessageBox.Show("An error occurred while updating " + txtName.Text);
                // MessageBox.Show("UPDATE Employee SET EmployeeName = '" + txtName.Text + "' , Address = '" + txtAddress.Text + "', Email = '" + txtEmail.Text + "', PhoneNumber = '" + txtPhone.Text + "', Status = '" + txtStatus.Text + "', Type = '" + txtType.Text + "', HourlyRate = '" + txtHourlyRate.Text + "', HireDate = '" + txtHireDate.Text + "', BuildingNumber = " + txtBuildingNum.Text + ", WHERE EmployeeID = " + txtID.Text);
             }
-
-            FillEmployeeDGV();
             
         }
 
@@ -156,6 +157,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Employee '" + txtID.Text + "' has been succesfully deleted");
                 txtID.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillEmployeeDGV();
             }
             else
             {
@@ -163,7 +166,6 @@ namespace Database_Project
                 MessageBox.Show("An error occurred while deleting " + txtID.Text);
             }
 
-            FillEmployeeDGV();
         }
     }
 }
