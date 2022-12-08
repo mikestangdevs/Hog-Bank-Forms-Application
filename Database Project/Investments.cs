@@ -64,6 +64,9 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Investment '" + txtInvID.Text + "' has been succesfully updated");
                 txtInvCustomerID.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillInvestmentsDGV();
+
             }
             else
             {
@@ -88,6 +91,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Investment '" + txtInvID.Text + "' has been succesfully deleted");
                 txtInvID.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillInvestmentsDGV();
             }
             else
             {
@@ -108,6 +113,8 @@ namespace Database_Project
                 // Name successfully entered, notify user and clear textbox
                 MessageBox.Show("Investment '" + txtInvName.Text + "' has been succesfully added");
                 txtInvName.Text = "";
+                // If QuerySuccessful is true, function refreshes DGV
+                FillInvestmentsDGV();
             }
             else
             {
