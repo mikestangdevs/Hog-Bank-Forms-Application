@@ -17,11 +17,6 @@ namespace Database_Project
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -79,16 +74,6 @@ namespace Database_Project
         {
             //MessageBox.Show(Walton_DB.OpenConnection().ToString());
             lblDate.Text = DateTime.Now.ToShortDateString();
-        }
-
-        private void lblDate_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void returnToLoginToolStripMenuItem_Click(object sender, EventArgs e)
