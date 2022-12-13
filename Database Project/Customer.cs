@@ -45,20 +45,6 @@ namespace Database_Project
             newForm.Show();
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Customer_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
