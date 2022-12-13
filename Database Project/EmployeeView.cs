@@ -22,11 +22,6 @@ namespace Database_Project
             lblDate.Text = DateTime.Now.ToShortDateString();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void accountBalanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
