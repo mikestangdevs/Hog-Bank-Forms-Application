@@ -74,54 +74,6 @@ namespace Database_Project
 
         }
 
-
-        
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPay_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtHourlyRate_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
             bool QuerySuccessful = false;
