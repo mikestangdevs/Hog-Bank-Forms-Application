@@ -25,11 +25,6 @@ namespace Database_Project
             newForm.Show();
         }
 
-        private void txtCurrentBalance1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             decimal SqlOutput;
